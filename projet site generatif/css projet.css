@@ -1,0 +1,292 @@
+
+@font-face {
+    font-family: Roboto;
+    src: url("./Roboto/Roboto-Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: tt_fors;
+    src: url("./tt_fors/TT Fors Trial Medium.ttf") format('truetype');
+}
+
+body {
+    font-family: 'tt_fors', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.img1 {
+    margin: 5px;
+    padding: 5px;
+    width: 60%;
+}
+
+header {
+    position: fixed;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-family: 'tt_fors', sans-serif;
+    color: var(--text-color);
+    padding: 0px;
+    text-align: center;
+    border-bottom:  1px #333;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère en dessous */
+    z-index: 1000;
+    width: 100%;
+    animation: fadeInSite 1s ease-out;
+}
+
+
+.head-a {
+    text-decoration: none;
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+}
+
+.header-content {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer {
+    line-height: 10px;
+    margin-top: 20px; /* Ajout d'une marge en haut du pied de page */
+    background-color:#ffffff;
+    padding: 10px;
+    text-align: center;
+    color:#1B1B1B ;
+    border-top:1px #333;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère en dessous */
+    z-index: 1000;
+    width: 100%;
+}
+
+
+
+#continent {
+    width: 1000px; /* Ajustement de la largeur du conteneur de continent */
+    height: 600px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px; /* Ajout d'une marge en bas du conteneur de continent */
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: auto;
+}
+
+#continent img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+#generateBtn {
+    margin-bottom: 20px; /* Ajout d'une marge en bas du bouton générateur */
+    
+    background-color: #1B1B1B; /* Couleur de fond */
+    border: 2px solid #000000;
+    color: white; /* Couleur du texte */
+    padding: 15px 25px; /* Espacement du texte à l'intérieur du bouton */
+    font-size: 16px; /* Taille de la police */
+    border-radius: 8px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointeur au survol */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#generateBtn:hover {
+    background-color: rgb( 221,221,221); /* Changement de couleur de fond au survol */
+    border-color: 1px black
+}
+
+.animal-container {
+    order: 1; /* Changer l'ordre pour que l'élément apparaisse après le conteneur de continent */
+}
+
+#animalImg {
+    max-width: 100%; /* Définit une largeur maximale de 100% pour s'assurer que l'image ne dépasse pas la taille de son conteneur */
+    width: 150px; /* Définit une largeur spécifique pour l'image */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.animal-info {
+    margin-top: 20px;
+}
+
+#explanationText {
+    font-family: 'Roboto', sans-serif; /* Utilisation de la police Roboto */
+    color: #333; /* Couleur du texte */
+    font-size: 12px; /* Taille de la police */
+    margin-top: 20px; /* Marge en haut du texte */
+}
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #333;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+    
+    /* Animation d'entrée du site */
+    @keyframes fadeInSite {
+        from {
+            opacity: 0;
+            transform: translateY(-50px); /* Déplacer le contenu vers le haut */
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0); /* Annuler le déplacement */
+        }
+    }
+    
+    /* Appliquer l'animation au conteneur principal */
+    .container {
+        text-align: center;
+        animation: fadeInSite 1s ease-out; /* Utiliser l'animation avec une durée de 1 seconde */
+    }
+    
+    /* Animation de pulsation pour le bouton générateur */
+    @keyframes pulseButton {
+        0% {
+            transform: scale(1); /* Taille normale */
+        }
+        50% {
+            transform: scale(1.05); /* Légère agrandissement */
+        }
+        100% {
+            transform: scale(1); /* Retour à la taille normale */
+        }
+    }
+    
+    /* Appliquer l'animation au bouton */
+    #generateBtn {
+        margin-bottom: 0px;
+        animation: pulseButton 2s ease-in-out infinite; /* Utiliser l'animation avec une durée de 2 secondes, une fonction de temporisation ease-in-out et de manière infinie */
+    }
+    @keyframes bounce {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+        100% { transform: translateY(0); }
+    }
+    
+    
+    
+    #returnBtn {
+        margin-top: 20px; /* Augmenter la marge supérieure pour déplacer le bouton plus bas */
+        background-color: #000000;
+        color: white;
+        padding: 10px 20px;
+        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block; /* Définir le bouton comme un bloc pour le placer en dessous du texte */
+        width: fit-content; /* Adapter la largeur du bouton au contenu */
+        margin-left: auto; /* Centrer le bouton horizontalement */
+        margin-right: auto;
+    }
+    
+    #returnBtn:hover {
+        background-color: #333333;
+    }
+    .animal-container {
+        display: flex;
+        flex-direction: column; /* Afficher les lignes verticalement */
+    }
+    
+    .row {
+        display: flex; /* Utilisation de Flexbox pour aligner les animaux sur une ligne */
+        justify-content: space-between; /* Aligner les éléments sur l'espace disponible */
+    }
+    
+    .grid-item {
+        width: 220px;
+        height: 100%;
+    }
+    
+        #exploreBtn {
+            margin-top: 10%; /* Réduire la marge supérieure pour déplacer le bouton un peu plus haut */
+            background-color: #1B1B1B;
+            color: white;
+            padding: 15px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s;
+            position: absolute;
+            top: 60%; /* Ajuster la position verticale */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fadeInSite 1s ease-out;
+        }
+        
+
+.background-container {
+    position: relative; /* Assurez-vous que le conteneur est positionné de manière relative */
+    animation: fadeInSite 1s ease-out;
+}
+
+    
+    #exploreBtn:hover {
+        background-color: #333333;
+    }
+    .button-container {
+        text-align: center; /* Pour centrer horizontalement le bouton */
+    }
+
+    #aPropos p {
+        font-family: 'Roboto', sans-serif;
+        
+        /* Autres styles CSS pour votre texte */
+    }
+    
+    #aPropos h2 {
+        font-family: 'Roboto', sans-serif;
+        margin-top: 60px;
+        /* Autres styles CSS pour votre texte */
+    }
+    
+    #aPropos {
+        text-align: center; /* Pour centrer horizontalement le contenu de la section */
+        margin-top: 50px; /* Ajuste la marge en haut de la section */
+        margin-bottom: 50px; /* Ajuste la marge en bas de la section */
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 26px;
+        white-space: pre-line;
+    }
+    

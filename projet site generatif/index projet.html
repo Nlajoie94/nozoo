@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO ZOO</title>
+    <link rel="stylesheet" href="css projet.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="">
+                <img class="img1" src="image/Logo_final.png" alt="Logo noir" style="padding-right: 50px;">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="head-a">Explorer</a></li>
+                    
+                    <li><a href="#aPropos" class="head-a">À propos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="background-container">
+        <button id="exploreBtn" onclick="scrollToGenerator()">J'explore les zoos</button>
+        <img src="image/Capture_decran_2024-03-22_a_00.12.40.png" alt="Capture d'écran" style="width: 100%; height: 600PX;margin-top: 100PX;">
+
+        <div class="overlay"></div>
+        <!-- Bouton pour explorer les zoos -->
+        
+    </div>
+
+    <div class="content">
+        <div id="continent" style="position: relative; width: 1000px; height: 600px; background-color: rgb(221, 221, 221); border-radius: 10px; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+            <img src="image/Amerique_du_nord.png" id="continent1" class="continent-img" style="position: absolute; top: 70px; left: 60px;">
+            <img src="image/Amerique_du_sud.png" id="continent2" class="continent-img" style="position: absolute; top: 320px; left: 130px;">
+            <img src="image/Afrique.png" id="continent3" class="continent-img" style="position: absolute; top: 270px; left: 410px;">
+            <img src="image/Asie.png" id="continent4" class="continent-img" style="position: absolute; top: 100px; left: 530px;">
+            <img src="image/Oceanie.png" id="continent5" class="continent-img" style="position: absolute; top: 380px; left: 790px;">
+            <img src="image/Europe.png" id="continent6" class="continent-img" style="position: absolute; top: 120px; left: 400px;">
+            <img id="continentImg" src="" style="margin-top: 20px;">
+            <div class="animal-container" style="margin-top: 20px;">
+                <img id="animalImg" src="" alt="">
+                <div class="animal-info">
+                    <p id="zooInfo"> </p>
+                    <p id="animalName"></p>
+                    <p id="explanationText"></p>
+                    <div id="generator">
+        </div>
+        <button id="generateBtn" style="margin-top: 20px;">J'EXPLORE LES ZOO </button>
+    </div>
+</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<a id="aPropos"></a>
+<div id="aPropos">
+    <h2>À propos </h2>
+    <p>NOZOO est plus plus qu’un simple projet étudiant.
+        Découvrez sur notre site générateur une multitude d’animaux.
+        Un projet qui lève le voile sur les conditions des animaux en captivité. 
+        Porté par une équipe dévouée de jeunes visionnaires, ce projet vise à sensibiliser le public aux défis et aux dilemmes auxquels sont confrontés les animaux dans les zoos, les parcs aquatiques et d'autres installations similaires.
+        Grâce à des articles percutants, des documentaires et des témoignages poignants, NOZOO met en lumière les enjeux liés à la captivité des animaux et encourage le public à réfléchir à leur bien-être.
+        Questionné vous également sur votre rapport à l’animalité et laisser vous guider par les émotions des animaux.
+        Léa Galibert, Lara Kaba, Nadir Lajoie et Kylian Bourdelas
+        </p>
+</div>
+
+
+
+
+
+            
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#" class="head-a">ZO tout droits réservés - © 2024</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js projet.js"></script>
+</body>
+
+</html>
